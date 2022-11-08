@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/devprofile-reactver/static/css/main.073c9b0a.css",
-    "main.js": "/devprofile-reactver/static/js/main.b533ded8.js",
+    "main.css": "/devprofile-reactver/static/css/main.32f07725.css",
+    "main.js": "/devprofile-reactver/static/js/main.785b89ba.js",
     "static/js/787.d3647122.chunk.js": "/devprofile-reactver/static/js/787.d3647122.chunk.js",
-    "static/media/logo.svg": "/devprofile-reactver/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/skyline.jpg": "/devprofile-reactver/static/media/skyline.482e0b55792deea31980.jpg",
     "index.html": "/devprofile-reactver/index.html",
-    "main.073c9b0a.css.map": "/devprofile-reactver/static/css/main.073c9b0a.css.map",
-    "main.b533ded8.js.map": "/devprofile-reactver/static/js/main.b533ded8.js.map",
+    "main.32f07725.css.map": "/devprofile-reactver/static/css/main.32f07725.css.map",
+    "main.785b89ba.js.map": "/devprofile-reactver/static/js/main.785b89ba.js.map",
     "787.d3647122.chunk.js.map": "/devprofile-reactver/static/js/787.d3647122.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b533ded8.js"
+    "static/css/main.32f07725.css",
+    "static/js/main.785b89ba.js"
   ]
 }
