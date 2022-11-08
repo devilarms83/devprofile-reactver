@@ -103,7 +103,7 @@ article p {
   justify-content: space-evenly;
 }
 
-.card {
+.cards {
   padding: 10px;
   flex: 0 0 300px;
   box-shadow: 7px 7px 5px var(--gray);
@@ -115,7 +115,7 @@ article p {
   font-size: 200%;
 }
 
-.card > img {
+.cards > img {
   box-shadow: none;
   max-width: 200px;
   max-height: 360px;

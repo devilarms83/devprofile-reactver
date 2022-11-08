@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink  } from "react-router-dom";
 
-export default function Header(){
+export default function Nav(){
     let activeStyle = {
         textDecoration: "underline",
       };
@@ -15,19 +15,19 @@ export default function Header(){
             <nav>
                 <ul>
                     <li>
-                        <NavLink  to='' className={isActive =>
-                            "nav-link" + (!isActive ? " unselected" : "")
-                        }>About Me</NavLink >
+                        <NavLink  to='aboutme' style={({ isActive }) =>
+                         isActive ? activeStyle : undefined
+                         }>About Me</NavLink >
                     </li>
                     <li>
-                        <NavLink  to='portfolio' className={isActive =>
-                            "nav-link" + (!isActive ? " unselected" : "")
-                        }>Portfolio</NavLink >
+                        <NavLink  to='portfolio' style={({ isActive }) =>
+                         isActive ? activeStyle : undefined
+                         }>Portfolio</NavLink >
                     </li>
                     <li>
-                        <NavLink  to='contact' className={isActive =>
-                            "nav-link" + (!isActive ? " unselected" : "")
-                        }>Contact</NavLink >                       
+                        <NavLink  to='contact' style={({ isActive }) =>
+                         isActive ? activeStyle : undefined
+                         }>Contact</NavLink >                       
                     </li>
                     <li>
                         <a href="https://drive.google.com/uc?export=download&id=1qzhgqSaI-YLLLcFiQxYkM0mL8Bm5-i3d">Resume</a>     

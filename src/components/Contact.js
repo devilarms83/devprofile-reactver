@@ -1,4 +1,7 @@
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const ContactForm = () => {
   const {
@@ -8,6 +11,19 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm();
   
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+        position: 'bottom-right',
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,  
+        draggable: false,
+        className: 'submit-feedback success',
+        toastId: 'notifyToast'
+    });
+    };
+
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
     
@@ -15,6 +31,27 @@ const ContactForm = () => {
     console.log('Email: ', email);
     console.log('Subject: ', subject);
     console.log('Message: ', message);
+
+    try {
+        const templateParams = {
+          name,
+          email,
+          subject,
+          message
+        };
+        await emailjs.send(
+          "service_m07d9ud",
+          "template_lmtpl5n",
+          templateParams,
+          "qjtjXEM5Tnuc4sNKN"
+        );
+        reset();
+        toastifySuccess();
+      } catch (e) {
+        console.log(e);
+      }
+
+
   };
 
   return (
@@ -100,6 +137,7 @@ const ContactForm = () => {
                 </button>
               </form>
             </div>
+            <ToastContainer />
           </div>
         </div>
       </div>
