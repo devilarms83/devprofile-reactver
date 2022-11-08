@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/devprofile-reactver/static/css/main.32f07725.css",
-    "main.js": "/devprofile-reactver/static/js/main.785b89ba.js",
+    "main.css": "/devprofile-reactver/static/css/main.909ce3b5.css",
+    "main.js": "/devprofile-reactver/static/js/main.8f72a874.js",
     "static/js/787.d3647122.chunk.js": "/devprofile-reactver/static/js/787.d3647122.chunk.js",
+    "static/media/weather.png": "/devprofile-reactver/static/media/weather.4a26ca1e46f3cb4c9375.png",
+    "static/media/techblog-home.png": "/devprofile-reactver/static/media/techblog-home.6bd35c1a0ad93d5c1bbf.png",
     "static/media/skyline.jpg": "/devprofile-reactver/static/media/skyline.482e0b55792deea31980.jpg",
+    "static/media/scranton_gamer.png": "/devprofile-reactver/static/media/scranton_gamer.ca081fc5948c83b5ffcd.png",
+    "static/media/tailgate_v2.png": "/devprofile-reactver/static/media/tailgate_v2.269b8649203a8f23b406.png",
+    "static/media/note_taker.png": "/devprofile-reactver/static/media/note_taker.646ef2047697b6f6162a.png",
     "index.html": "/devprofile-reactver/index.html",
-    "main.32f07725.css.map": "/devprofile-reactver/static/css/main.32f07725.css.map",
-    "main.785b89ba.js.map": "/devprofile-reactver/static/js/main.785b89ba.js.map",
+    "main.909ce3b5.css.map": "/devprofile-reactver/static/css/main.909ce3b5.css.map",
+    "main.8f72a874.js.map": "/devprofile-reactver/static/js/main.8f72a874.js.map",
     "787.d3647122.chunk.js.map": "/devprofile-reactver/static/js/787.d3647122.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32f07725.css",
-    "static/js/main.785b89ba.js"
+    "static/css/main.909ce3b5.css",
+    "static/js/main.8f72a874.js"
   ]
 }
