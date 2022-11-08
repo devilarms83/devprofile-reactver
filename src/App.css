@@ -1,38 +1,159 @@
-.App {
+:root {
+  --dark: #0E7AD8ff;
+  --light: #fff;
+  --gray: #b9c6ae;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-family: Georgia, serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav li {
+  padding: 5px;
+  background-color: unset;
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 125%;
+  text-decoration: none;
+}
+
+nav li:hover{
+  color: var(--light);
+}
+
+nav a {
+  background-color: unset;
+  color: var(--gray);
+  font-weight: bold;
+  /* font-size: 125%; */
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+main img {
+  border-radius:8px;
+  box-shadow: 7px 7px 5px var(--gray);
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+.subhead {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./images/skyline.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.subsection {
+  max-width: 96%;
+  margin: 2% auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name {
+  color: var(--dark);
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+article p {
+  margin: 2% 0;
+  font-size: 125%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.maincard {
+  margin: 1% 0;
+  font-size: 125%;
+}
+
+.portfolio {
+  padding: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 10px;
+  flex: 0 0 300px;
+  box-shadow: 7px 7px 5px var(--gray);
+  margin: 20px;
+  border-radius:8px;
+  color: var(--light);
+  background-color: var(--dark);
+  text-decoration: none;
+  font-size: 200%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card > img {
+  box-shadow: none;
+  max-width: 200px;
+  max-height: 360px;
+}
+
+form p {
+  margin: 1% 0;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 1% 2%;
+  color: var(--light);
+  background-color: #13293d;
+  border: none;
+  border-radius:8px;
+  outline: none;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2%;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header, nav {
+      flex-direction: column;
+      font-size: large;
   }
-  to {
-    transform: rotate(360deg);
+
+  main {
+      max-width: 1200px;
+      font-size: x-large;
   }
 }
